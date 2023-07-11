@@ -1,4 +1,4 @@
-![Athletics Voley](https://github.com/Ludmila-nus/Athletics-Voley/assets/123734518/f8233ec2-da9c-4773-b62f-b9955fd445cd)
+![banner athletics](banner-athletics.png)
 
 ## ¡Bienvenido(a) al repositorio del proyecto de la página web de Athletics Voley!
 #### pagina en desarrollo
