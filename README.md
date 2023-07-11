@@ -11,17 +11,15 @@ Este proyecto tiene como objetivo principal crear una página web para el equipo
     <li>Página de inicio: Presentación del equipo, su historia y valores fundamentales.</li>
     <li>Perfiles de jugadores: Información detallada de cada jugadora, incluyendo logros, estadísticas y fotografías.
     </li>
+    <li>Galería de fotos: Espacio dedicado para compartir momentos destacados del equipo a través de imágenes.</li>
     <li>Calendario y resultados: Exhibición de los próximos partidos y resultados pasados del equipo.</li>
     <li>Noticias y eventos: Publicación de noticias relevantes, actualizaciones y eventos importantes relacionados con Athletics.
     </li>
-    <li>Galería de fotos: Espacio dedicado para compartir momentos destacados del equipo a través de imágenes.</li>
     <li>Formulario de contacto: Opción para que los visitantes puedan ponerse en contacto con el equipo para consultas o mensajes.</li>
 </ul>
 
 ### Tecnologías Utilizadas
 HTML5, CSS3 y JavaScript: Lenguajes de programación fundamentales para el desarrollo web.
-
-Bootstrap: Framework CSS para una interfaz responsiva y estilizada.
 
 GitHub Pages: Plataforma de alojamiento para desplegar la página web en línea.
 

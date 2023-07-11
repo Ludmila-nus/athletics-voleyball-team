@@ -49,93 +49,97 @@
     <h1><strong>ATHLETICS VOLEY</strong></h1>
     <nav>
       <ul>
+        <li><a href="index.html">Home</a></li>
         <li><a href="jugadoras.html">Conoce a nuestras jugadoras</a></li>
         <li><a href="noticias.html">Noticias</a></li>
         <li><a href="galeria_fotos.html">Galería de fotos</a></li>
         <li><a href="entrenamientos.html">Horarios de entrenamientos</a></li>
-        <li><a href="sumate.html">Sumate a nuestro equipo</a></li>
+        <li>Sumate a nuestro equipo</li>
         <li><a href="mensaje.html">Dejanos tu mensaje</a></li>
         <li><a href="enlases_de_interes.html">Enlases de interes</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
+
+      <p><a href="index.html">👈 Volver a home</a></p>
     </nav>
-    <p><a href="index.html">👈 Volver atrás</a></p>
     <hr>
   </header>
 
   <main>
-    <form action="athletics" name="sumate" method="get">
-      <h2>LLena el formulario de contacto</h2>
-      <fieldset>
-        <legend>Tus datos</legend>
-        <p>
-          <label for="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ingresa tu nombre" autofocus>
-        </p>
-        <p>
-          <label for="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ingresa tu apellido">
-        </p>
-        <p>
-          <label for="nacimiento">Fecha de Nacimiento</label>
-          <input type="date" name="nacimiento" id="nacimiento" maxlength="50"
-            placeholder="Ingresa tu fecha de nacimiento">
-        </p>
-        <p>
-          <label for="telefono">Teléfono</label>
-          <input type="text" name="telefono" id="telefono" maxlength="11" placeholder="000 0000000">
-        </p>
-      </fieldset>
+    <section>
+      <form action="athletics" name="sumate" method="get">
+        <h2>LLena el formulario de contacto</h2>
+        <fieldset>
+          <legend>Tus datos</legend>
+          <p>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ingresa tu nombre" autofocus>
+          </p>
+          <p>
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ingresa tu apellido">
+          </p>
+          <p>
+            <label for="nacimiento">Fecha de Nacimiento</label>
+            <input type="date" name="nacimiento" id="nacimiento" maxlength="50"
+              placeholder="Ingresa tu fecha de nacimiento">
+          </p>
+          <p>
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" id="telefono" maxlength="11" placeholder="000 0000000">
+          </p>
+        </fieldset>
 
-      <fieldset>
-        <legend>Tu voley</legend>
-        <p>¿Cuanta experiencia tienes en el deporte?</p>
-        <p>
-          <input type="radio" name="experiencia" id="principiante">
-          <label for="principiante">Soy principiante</label>
-        </p>
-        <p>
-          <input type="radio" name="experiencia" id="media">
-          <label for="media">He jugado unos años al voley</label>
-        </p>
-        <p>
-          <input type="radio" name="experiencia" id="avanzado">
-          <label for="avanzado">he jugado muchos años al voley</label>
-        </p>
-        <p>
-          <input type="radio" name="experiencia" id="profesional">
-          <label for="profesional">Soy o fui, jugadora profesional</label>
-        </p>
-        <p>
-        <p>Selecciona en que puesto/s te sientes mas comoda</p>
-        <select name="puesto" id="puesto" multiple size="6">
-          <option value="">-</option>
-          <option value="p">Punta</option>
-          <option value="C">Central</option>
-          <option value="A">Armadora</option>
-          <option value="O">Opuesto</option>
-          <option value="L">Libero</option>
-        </select>
-        </p>
-      </fieldset>
+        <fieldset>
+          <legend>Tu voley</legend>
+          <p>¿Cuanta experiencia tienes en el deporte?</p>
+          <p>
+            <input type="radio" name="experiencia" id="principiante">
+            <label for="principiante">Soy principiante</label>
+          </p>
+          <p>
+            <input type="radio" name="experiencia" id="media">
+            <label for="media">He jugado unos años al voley</label>
+          </p>
+          <p>
+            <input type="radio" name="experiencia" id="avanzado">
+            <label for="avanzado">he jugado muchos años al voley</label>
+          </p>
+          <p>
+            <input type="radio" name="experiencia" id="profesional">
+            <label for="profesional">Soy o fui, jugadora profesional</label>
+          </p>
+          <p>
+          <p>Selecciona en que puesto/s te sientes mas comoda</p>
+          <select name="puesto" id="puesto" multiple size="6">
+            <option value="">-</option>
+            <option value="p">Punta</option>
+            <option value="C">Central</option>
+            <option value="A">Armadora</option>
+            <option value="O">Opuesto</option>
+            <option value="L">Libero</option>
+          </select>
+          </p>
+        </fieldset>
 
-      <fieldset>
-        <legend>Mensaje</legend>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
-      </fieldset>
+        <fieldset>
+          <legend>Mensaje</legend>
+          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
+        </fieldset>
 
-      <p>¡En breve te contactaremos!</p>
-      <button>Enviar</button>
-    </form>
-
+        <p>¡En breve te contactaremos!</p>
+        <button>Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <hr>
     <nav>
-      <a href="contacto.html">Contacto</a>
+      <p><a href="contacto.html">Contacto</a></p>
     </nav>
   </footer>
+
 
 </body>
 
