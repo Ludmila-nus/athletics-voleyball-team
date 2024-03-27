@@ -1,4 +1,4 @@
-![banner athletics](banner-athletics.png)
+![banner athletics](./img/banner-athletics.png)
 
 ## ¡Bienvenido(a) al repositorio del proyecto de la página web de Athletics Voley!
 #### pagina en desarrollo
@@ -35,7 +35,7 @@ Si deseas contribuir a este proyecto, ¡estaremos encantados de recibir tu ayuda
 </ol>
 <p>Agradecemos de antemano todas las contribuciones que nos ayuden a mejorar la página web de Athletics Voley.</p>
 
-## Te invitamos a visitar nuestro sitio web en la siguiente dirección: https://ludmila-nus.github.io/Athletics-Voley/
+## Te invitamos a visitar nuestro sitio web en la siguiente dirección: https://ludmila-nus.github.io/athletics-voleyball-team/
 
 ### Contacto
 Si tienes alguna pregunta o sugerencia relacionada con este proyecto, no dudes en ponerte en contacto con nosotros a través del siguiente correo electrónico: ludmilanussio@hotmail.com
