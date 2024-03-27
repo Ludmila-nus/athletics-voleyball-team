@@ -1,0 +1,58 @@
+.header-principal {
+
+    .container {
+        padding: 0;
+        margin: 0;
+    }
+
+    &__logo {
+        @include flex();
+        justify-content: space-around;
+        background-image: $color-gradientBlack;
+    }
+
+    &__logo-link {
+        text-decoration-line: none;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        width: auto;
+        font-family: $tittle-font;
+        color: $color-pink;
+        padding: 12px;
+        display: inline-block;
+    }
+
+    .toggleMenu {
+        @include button();
+    }
+
+
+    &__menu {
+        display: none;
+
+        @include breakpoint(tablet) {
+
+            @include reset-list();
+            @include flex();
+            background-color: $color-grey;
+
+            li {
+                padding: 0px;
+                margin: 0px;
+
+                a {
+                    display: block;
+                    text-decoration-line: none;
+                    text-transform: capitalize;
+                    font-size: .8rem;
+                    color: $color-black;
+
+                    &:hover {
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}

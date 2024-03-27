@@ -1,0 +1,57 @@
+@mixin breakpoint($bp) {
+  @if $bp ==tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp ==tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp ==desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin flex () {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+@mixin button() {
+  display: inline-block;
+  border: 1px solid $color-lightGrey;
+  border-radius: 10px;
+  display: flex;
+  padding: 2px 5px 2px 5px;
+  align-items: center;
+  color: $color-pink;
+  img{
+    width: 100%;
+    padding-left: 2px;
+    
+}
+
+  &:hover {
+    background-color: $color-white;
+  }
+}
