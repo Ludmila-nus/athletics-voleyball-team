@@ -31,6 +31,10 @@
     &__menu {
         display: none;
 
+        &.visible {
+            display: block;
+        }
+
         @include breakpoint(tablet) {
 
             @include reset-list();
