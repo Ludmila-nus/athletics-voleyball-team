@@ -9,22 +9,103 @@
         @include flex();
         justify-content: space-around;
         background-image: $color-gradientBlack;
+        padding-left: 5px;
     }
 
     &__logo-link {
         text-decoration-line: none;
         font-size: 1.1rem;
         text-transform: uppercase;
-        letter-spacing: 3px;
+        letter-spacing: 2px;
         width: auto;
         font-family: $tittle-font;
         color: $color-pink;
         padding: 12px;
         display: inline-block;
+        text-align: center;
     }
 
     .toggleMenu {
+
         @include button();
+    }
+
+    &__login {
+        padding-right: 5px;
+
+        #loginButton {
+            @include button();
+            font-family: $primary-font;
+            text-transform: capitalize;
+            font-weight: 500;
+            line-height: 0.8rem;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .modal-content {
+            background-color: $color-white;
+            margin: 20% 20%;
+            padding: 20px;
+            border: 2px solid $color-pink;
+            width: 60%;
+            border-radius: 10px;
+
+            h2 {
+                font-family: $primary-font;
+                padding: 10px;
+                font-size: 1.2rem;
+                text-transform: capitalize;
+            }
+        }
+
+        .close {
+            color: $color-pink;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+
+        .close:hover,
+        .close:focus {
+            color: $color-black;
+            background-color: $color-lightGrey;
+            padding-left: 5px;
+            padding-right: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #loginForm {
+            font-family: $secondary-font;
+            padding: 10px;
+            font-size: 1.1rem;
+            padding-bottom: 5px;
+
+
+            input {
+                border: 1px solid $color-grey;
+                padding-bottom: 5px;
+            }
+
+            button{
+                @include button;
+                margin-top: 15px;
+                padding: 5px;
+            }
+
+
+        }
     }
 
 

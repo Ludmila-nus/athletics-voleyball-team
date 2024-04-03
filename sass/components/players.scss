@@ -1,0 +1,16 @@
+.players {
+    h1 {
+        font-family: $tittle-font;
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 30px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+}
+
+.playersTable {
+    background-color: lightgray;
+    color: navy;
+}

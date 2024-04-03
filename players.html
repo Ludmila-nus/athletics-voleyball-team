@@ -2,25 +2,13 @@
 <html class="no-js" lang="es">
 
 <head>
-  <!-- Codificación-->
   <meta charset="utf-8">
-
-  <!-- Título para el navegador y los buscadores -->
   <title>Athletics - voleyball team</title>
-
-  <!-- Descripción de la página para los buscadores -->
   <meta name="description" content="Pagina web del equipo de voley -Athletics-">
-
-  <!-- Palabras clave para los buscadores -->
   <meta name="keywords" content="athletics, voley, voleyball, equipo de voley, voley bell ville">
-
-  <!-- Para que la web sea responsive -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Autor de la página -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Ludmila Nussio">
 
-  <!-- Favicon de la página -->
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
@@ -36,47 +24,74 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/manifest.json">
 
-  <!-- Para algunos navegadores móviles -->
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
+  <header class="header-principal">
+    <div class="container">
+      <div class="header-principal__logo">      
+        <button class="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
 
-  <header>
-    <figure>
-      <img src="./img/banner/banner-athletics.png" alt="banner" style="width:1366px;height:256px;">
-    </figure>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li>Conoce a nuestras jugadoras</li>
-        <li><a href="noticias.html">Noticias</a></li>
-        <li><a href="galeria_fotos.html">Galería de fotos</a></li>
-        <li><a href="entrenamientos.html">Horarios de entrenamientos</a></li>
-        <li><a href="sumate.html">Sumate a nuestro equipo</a></li>
-        <li><a href="mensaje.html">Dejanos tu mensaje</a></li>
-        <li><a href="enlases_de_interes.html">Enlases de interes</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <a href="index.html" class="header-principal__logo-link" id="title">athletics voley</a>
 
-      <p><a href="index.html">👈 Volver a home</a></p>
-    </nav>
-    <hr>
+        <div class="header-principal__login">
+          <button id="loginButton">Iniciar sesión</button>
+
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Iniciar sesión</h2>
+
+              <form id="loginForm">
+                <label for="username">Nombre de usuario:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Iniciar sesión</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="header-principal__nav-wrapper">
+        <nav class="header-principal__nav" >
+          <ul class="header-principal__menu" id="menu">
+            <li>Home</li>
+            <li><a href="players.html">Nuestras jugadoras</a></li>
+            <li><a href="news.html">Noticias</a></li>
+            <li><a href="photoGalery.html">Galería de fotos</a></li>
+            <li><a href="traning.html">Horarios de entrenamientos</a></li>
+            <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
+            <li><a href="messages.html">Dejanos tu mensaje</a></li>
+            <li><a href="links.html">Enlases de interes</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h1>Juntas en la Red: Unidas en la Cancha y en la Vida</h1>
-      <p>"Donde la pasión deportiva se entrelaza con la fuerza de la amistad, se crean vínculos inquebrantables. En cada
-        paso, en cada jugada, nos apoyamos mutuamente, celebrando victorias y superando desafíos juntas. En este equipo,
-        somos más que simples jugadoras, somos amigas que comparten una pasión que nos une en un lazo
-        indestructible."</p>
+  <main class="players">
 
-      <table border="1">
-        <caption>Listado de juagdoras</caption>
+    <section>
+      <h1>equipo de voley athletics</h1>
+      <p>"En este equipo, somos más que simples jugadoras, somos amigas que comparten una pasión que nos une."</p>
+
+      <table class="playersTable">
+        <caption>Listado de jugadoras</caption>
         <thead>
           <tr>
             <th>N° camiseta</th>
@@ -172,14 +187,8 @@
             <td>Libero</td>
           </tr>
           <tr>
-            <td>16</td>
-            <td>Karenina Nussio</td>
-            <td>33</td>
-            <td>Punta</td>
-          </tr>
-          <tr>
             <td>17</td>
-            <td>Veronica/td>
+            <td>Veronica</td>
             <td>35</td>
             <td>Punta</td>
           </tr>
@@ -198,14 +207,44 @@
     </section>
   </main>
 
-
   <footer>
-    <hr>
-    <nav>
-      <p><a href="contacto.html">Contacto</a></p>
-    </nav>
+    <div class="footer">
+      <div class="footer__follow">
+        <h3>seguinos en</h3>
+        <a href="https://www.instagram.com/athletics_voley"><img src="./img/icons/instagram.png" alt="instagram"
+            class="instagram"></a>
+      </div>
+
+      <div class="footer__contactTo">
+        <div class="footer__contact">
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer__icons">
+          <ul>
+            <li><a href=""><img src="./img/icons/callPhone.png" alt="call phone"></a></li>
+            <li><a href=""><img src="./img/icons/whatsapp.png" alt="whatsapp"></a></li>
+            <li><a href=""><img src="./img/icons/email.png" alt="email"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flaticon-credit">
+      Iconos diseñados por <a href="https://www.flaticon.es/autores/ekros" title="Ekros"> Ekros </a> from <a
+        href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a>
+
+      <a target="_blank" href="https://icons8.com/icon/Y09FGAuM5XFB/send">Enviar</a> icono de <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+
+      <a target="_blank" href="https://icons8.com/icon/48839/instagram">Instagram</a> icono de <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+    </div>
+
   </footer>
 
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>
