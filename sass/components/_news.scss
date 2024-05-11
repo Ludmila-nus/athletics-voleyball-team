@@ -1,0 +1,53 @@
+.news {
+    background-image: url(../../img/background/voleyball-woman.jpg);
+    background-repeat: no-repeat;
+    padding-bottom: 50px;
+    background-position: 90% 90%;
+    background-size: 65%;    
+
+    h1 {
+        font-family: $tittle-font;
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 30px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        padding-bottom: 20px;      
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        padding-bottom: 40px;     
+        margin-left: 20px;       
+        padding: 10px;             
+    }
+
+    ul {
+        @include flex();
+        align-content: flex-start;
+        padding-bottom: 80px;
+        flex-direction: column;
+        
+        li {
+            @include reset-list();
+
+            a {
+                font-family: $secondary-font;
+                display: block;
+                text-decoration-line: none;
+                text-transform: capitalize;
+                font-size: 1.4rem;
+                color: $color-black;
+                font-weight: 600;
+                text-shadow: 1px 1px $color-lightGrey;
+                padding: 10px;
+
+                &:hover {
+                    color: $color-pink;
+                    
+                }
+            }
+        }
+
+    }
+}

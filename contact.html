@@ -39,19 +39,15 @@
 <body>
   <header class="header-principal">
     <div class="container">
-      <div class="header-principal__logo">      
-        <button class="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
-
+      <div class="header-principal__logo">
+        <button id="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
         <a href="index.html" class="header-principal__logo-link" id="title">athletics voley</a>
-
         <div class="header-principal__login">
           <button id="loginButton">Iniciar sesión</button>
-
           <div id="loginModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Iniciar sesión</h2>
-
               <form id="loginForm">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username">
@@ -62,13 +58,11 @@
             </div>
           </div>
         </div>
-
       </div>
-
       <div class="header-principal__nav-wrapper">
-        <nav class="header-principal__nav" >
+        <nav class="header-principal__nav">
           <ul class="header-principal__menu" id="menu">
-            <li>Home</li>
+            <li><a href="index.html"></a>Home</li>
             <li><a href="players.html">Nuestras jugadoras</a></li>
             <li><a href="news.html">Noticias</a></li>
             <li><a href="photoGalery.html">Galería de fotos</a></li>
@@ -76,7 +70,7 @@
             <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
             <li><a href="messages.html">Dejanos tu mensaje</a></li>
             <li><a href="links.html">Enlases de interes</a></li>
-            <li><a href="contact.html">Contacto</a></li>
+            <li>Contacto</li>
           </ul>
         </nav>
       </div>
@@ -85,15 +79,18 @@
   </header>
 
   <main>
-    <section>
-      <h1>Contacto Athletics Voley</h1>
-      <address>contacto: Silvina Piñero (Entrenadora) </address>
-      <address>Telefono: 000 0000000</address>
-      <address>email: athleticsvoley@example.com</address>
-      <p>Si quieres ser parte del equipo y quieres que te contactemos, ¡llena el formulario! &#128071</p>
-      <p><a href="sumate.html">Completa aqui el formulario</a></p>
-    </section>
+    <div class="container">
+      <section class="contactSection">
+        <h1>Contacto Athletics Voley</h1>
+        <address>contacto: Silvina Piñero (Entrenadora) </address>
+        <address>Telefono: 000 0000000</address>
+        <address>email: athleticsvoley@example.com</address>
+        <p>Si quieres ser parte del equipo y quieres que te contactemos, ¡llena el formulario!</p>
+        <p><a href="joinUs.html">Completa aquí el formulario</a></p>
+      </section>
+    </div>
   </main>
+
   <footer>
     <div class="footer">
       <div class="footer__follow">

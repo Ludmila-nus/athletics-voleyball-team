@@ -25,9 +25,10 @@
         text-align: center;
     }
 
-    .toggleMenu {
+    #toggleMenu {
 
         @include button();
+
     }
 
     &__login {
@@ -41,6 +42,7 @@
             line-height: 0.8rem;
         }
 
+        
         .modal {
             display: none;
             position: fixed;
@@ -98,7 +100,7 @@
                 padding-bottom: 5px;
             }
 
-            button{
+            button {
                 @include button;
                 margin-top: 15px;
                 padding: 5px;
@@ -109,22 +111,32 @@
     }
 
 
+
+
     &__menu {
         display: none;
+        position: absolute;
+        background-color: $color-lightGrey;
+        min-width: 160px;
+        padding: 12px 16px;
+        z-index: 1;
 
-        &.visible {
+        &.active {
             display: block;
         }
 
         @include breakpoint(tablet) {
 
-            @include reset-list();
             @include flex();
             background-color: $color-grey;
 
             li {
+                @include reset-list();
                 padding: 0px;
                 margin: 0px;
+                background-color: $color-grey;
+
+
 
                 a {
                     display: block;
@@ -139,5 +151,7 @@
                 }
             }
         }
+
+
     }
 }

@@ -1,0 +1,48 @@
+.players {
+    h1 {
+        font-family: $tittle-font;
+        font-size: 1.1rem;
+        text-align: center;
+        padding-top: 30px;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        padding-bottom: 20px;
+    }
+    background-image: url(../../img/background/red-voleibol.avif);
+    padding-bottom: 90px;
+
+}
+
+.playersTable {
+    background-color:$color-lightGrey2;
+    filter: opacity(90%);
+    color: $color-grey;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-collapse: collapse;
+    
+    caption{
+        color:$color-black;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-decoration: underline auto solid $color-black;
+        line-height: 40px;
+        text-underline-offset: 5px;   
+    }
+
+    tr {
+        border-bottom: 1px solid $color-white;
+    }
+    
+    .tfoot {
+        display: table-footer-group;
+        background-color: #cf05cf;
+       
+    }
+
+}
+
+
+
+

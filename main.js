@@ -2,55 +2,58 @@ import "./sass/style.scss";
 
 
 // ------- Title ----------
-let titulo = document.getElementById('title');
-let texto = titulo.textContent;
-titulo.textContent = ''; 
+document.addEventListener('DOMContentLoaded', function () {
+    let titulo = document.getElementById('title');
+    let texto = titulo.textContent;
+    titulo.textContent = '';
 
-// The letters appear one by one
-const tiempoEntreLetras = 100; 
-let index = 0;
+    // The letters appear one by one
+    const tiempoEntreLetras = 100;
+    let index = 0;
 
-function mostrarLetra() {
-    titulo.textContent += texto[index]; 
-    index++;
-    if (index < texto.length) {
-        setTimeout(mostrarLetra, tiempoEntreLetras);
+    function mostrarLetra() {
+        titulo.textContent += texto[index];
+        index++;
+        if (index < texto.length) {
+            setTimeout(mostrarLetra, tiempoEntreLetras);
+        }
     }
-}
 
-// Call the function to start displaying the letters
-mostrarLetra();
+    // Call the function to start displaying the letters
+    mostrarLetra();
 
-// ------- Login----------
-let modal = document.getElementById('loginModal');
-let loginButton = document.getElementById('loginButton');
-let closeButton = document.getElementsByClassName('close')[0];
+    // ------- Login----------
 
-// Add a click event to the login button to open the modal
-loginButton.addEventListener('click', function(){
-    modal.style.display = 'block';
-})
+    let modal = document.getElementById('loginModal');
+    let loginButton = document.getElementById('loginButton');
+    let closeButton = document.getElementsByClassName('close')[0];
 
-// When the user clicks on <span> (x), close the modal
-closeButton.addEventListener('click', function(){
-    modal.style.display = 'none';
-})
+    // Add a click event to the login button to open the modal
+    loginButton.addEventListener('click', function () {
+        modal.style.display = 'block';
+    })
 
-// When the user clicks anywhere outside the modal, close it
-window.addEventListener('click', function(event) {
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
-  })
+    // When the user clicks on <span> (x), close the modal
+    closeButton.addEventListener('click', function () {
+        modal.style.display = 'none';
+    });
 
-//------- menu------------
-document.addEventListener('DOMContentLoaded', function(){
+    // When the user clicks anywhere outside the modal, close it
+    window.addEventListener('click', function (event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
+
+
+    //------- menu------------
+
     const toggleMenuBtn = document.getElementById('toggleMenu');
     const menu = document.getElementById('menu');
 
-    toggleMenuBtn.addEventListener('click', function(){
+    toggleMenuBtn.addEventListener('click', function () {
         // Toggle menu visibility by changing the 'visible' class
-        menu.classList.toggle('visible');
+        menu.classList.toggle('active');
     });
 
 });

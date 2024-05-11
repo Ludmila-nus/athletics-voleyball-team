@@ -1,0 +1,36 @@
+.contactSection {
+    
+background-image: url('/athletics-voleyball-team/img/background/image1.jpeg');
+
+    * {
+        padding-bottom: 20px;
+    }
+    h1 {
+        font-family: $tittle-font;
+        font-size: 1.3rem;
+        padding-bottom: 20px;                        
+    }
+    address{
+        font-weight: 600;
+    }
+
+    p{
+        font-family: $secondary-font;
+
+        a{
+            color: $color-pink;
+            font-weight: 600;
+            border-radius: 10px;
+            align-items: center;
+            border: 1px solid $color-grey;
+            background-color: $color-lightGrey;
+            padding: 5px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: $color-pink;
+            color: $color-white;
+          }
+    }
+}

@@ -39,19 +39,15 @@
 <body>
   <header class="header-principal">
     <div class="container">
-      <div class="header-principal__logo">      
-        <button class="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
-
+      <div class="header-principal__logo">
+        <button id="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
         <a href="index.html" class="header-principal__logo-link" id="title">athletics voley</a>
-
         <div class="header-principal__login">
           <button id="loginButton">Iniciar sesión</button>
-
           <div id="loginModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Iniciar sesión</h2>
-
               <form id="loginForm">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username">
@@ -62,15 +58,13 @@
             </div>
           </div>
         </div>
-
       </div>
-
       <div class="header-principal__nav-wrapper">
-        <nav class="header-principal__nav" >
+        <nav class="header-principal__nav">
           <ul class="header-principal__menu" id="menu">
-            <li>Home</li>
+            <li><a href="index.html"></a>Home</li>
             <li><a href="players.html">Nuestras jugadoras</a></li>
-            <li><a href="news.html">Noticias</a></li>
+            <li>Noticias</li>
             <li><a href="photoGalery.html">Galería de fotos</a></li>
             <li><a href="traning.html">Horarios de entrenamientos</a></li>
             <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
@@ -85,16 +79,16 @@
   </header>
 
   <main>
-    <section>
-      <h1>Portal de noticias.</h1>
-      <h2>Actualidad de Athletics y los ultimos movimientos de las Panteras.</h2>
-      <ul>
-        <li>
-          <p><a href="./noticias/noticiasathletics.html"><strong>Athletics</strong></a></p>
-          <p><a href="./noticias/noticiaspanteras.html"><strong>Las Panteras</strong></a></p>
-        </li>
-      </ul>
-    </section>
+   
+      <section class="news">
+        <h1>Portal de noticias.</h1>
+        <h2>Actualidad de Athletics y los ultimos movimientos de las Panteras.</h2>
+        <ul>
+          <li><a href="./noticias/noticiasathletics.html">Athletics</a></li>
+          <li><a href="./noticias/noticiaspanteras.html">Las Panteras</a></li>
+        </ul>
+      </section>
+
   </main>
 
 
