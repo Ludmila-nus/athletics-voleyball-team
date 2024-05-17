@@ -19,9 +19,7 @@ Este proyecto tiene como objetivo principal crear una página web para el equipo
 </ul>
 
 ### Tecnologías Utilizadas
-HTML5, CSS3 y JavaScript: Lenguajes de programación fundamentales para el desarrollo web.
-
-GitHub Pages: Plataforma de alojamiento para desplegar la página web en línea.
+HTML5, CSS3 y JavaScript
 
 ### Contribución
 Si deseas contribuir a este proyecto, ¡estaremos encantados de recibir tu ayuda! Puedes realizar mejoras, solucionar problemas o agregar nuevas características. Simplemente sigue los siguientes pasos:

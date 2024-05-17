@@ -1,3 +1,56 @@
-img{
-    width: 500px;
+.photoGalery {
+    p:nth-of-type(2) {
+        font-weight: 600;
+    }
+
+    &__text {
+        padding-bottom: 30px;
+    }
+
+    &__videos {
+        padding-top: 20px;
+        padding-bottom: 40px;
+        h2 {
+            color: $color-grey;
+            font-family: $secondary-font;
+        }
+
+        width:100%;
+
+    }
+}
+
+.swiper-container {
+    width: 100%;
+
+    .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 0px;
+    }
+
+    .mySwiper {
+        padding-bottom: 20px;
+
+        .swiper-slide {
+            img {
+                width: 400px;
+                height: 250px;
+            }
+
+            video {
+
+                margin: auto;
+                display: block;
+
+            }
+        }
+
+        .swiper-button-next {
+            right: -2px;
+        }
+
+        .swiper-button-prev {
+            left: -2px;
+        }
+
+    }
 }

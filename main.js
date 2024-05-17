@@ -1,4 +1,5 @@
 import "./sass/style.scss";
+import swiper from "./swiper";
 
 
 // ------- Title ----------
