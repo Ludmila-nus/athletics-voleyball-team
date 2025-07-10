@@ -62,15 +62,15 @@
       <div class="header-principal__nav-wrapper">
         <nav class="header-principal__nav">
           <ul class="header-principal__menu" id="menu">
-            <li>Home</li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="players.html">Nuestras jugadoras</a></li>
             <li><a href="news.html">Noticias</a></li>
             <li><a href="photoGalery.html">Galería de fotos</a></li>
-            <li><a href="traning.html">Horarios de entrenamientos</a></li>
-            <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
+            <li><a href="training.html">Horarios de entrenamientos</a></li>
+            <li>Sumate a nuestro equipo</li>
             <li><a href="messages.html">Dejanos tu mensaje</a></li>
             <li><a href="links.html">Enlases de interes</a></li>
-            <li><a href="contact.html">Contacto</a></li>
+            <li><a href="contact.html"></a>Contacto</li>
           </ul>
         </nav>
       </div>
@@ -78,73 +78,76 @@
     </div>
   </header>
 
-  <main>
-    <section>
-      <form action="athletics" name="sumate" method="get">
-        <h1>LLena el formulario de contacto</h1>
-        <fieldset>
-          <legend>Tus datos</legend>
-          <p>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ingresa tu nombre" autofocus>
-          </p>
-          <p>
-            <label for="apellido">Apellido</label>
-            <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ingresa tu apellido">
-          </p>
-          <p>
-            <label for="nacimiento">Fecha de Nacimiento</label>
-            <input type="date" name="nacimiento" id="nacimiento" maxlength="50"
-              placeholder="Ingresa tu fecha de nacimiento">
-          </p>
-          <p>
-            <label for="telefono">Teléfono</label>
-            <input type="text" name="telefono" id="telefono" maxlength="11" placeholder="000 0000000">
-          </p>
-        </fieldset>
+ <main class="formulario">
+  <section class="formulario__section">
+    <form class="formulario__form" action="athletics" name="sumate" method="get">
+      <h1 class="formulario__title">Llená el formulario de contacto</h1>
 
-        <fieldset>
-          <legend>Tu voley</legend>
-          <p>¿Cuanta experiencia tienes en el deporte?</p>
-          <p>
-            <input type="radio" name="experiencia" id="principiante">
-            <label for="principiante">Soy principiante</label>
-          </p>
-          <p>
-            <input type="radio" name="experiencia" id="media">
-            <label for="media">He jugado unos años al voley</label>
-          </p>
-          <p>
-            <input type="radio" name="experiencia" id="avanzado">
-            <label for="avanzado">he jugado muchos años al voley</label>
-          </p>
-          <p>
-            <input type="radio" name="experiencia" id="profesional">
-            <label for="profesional">Soy o fui, jugadora profesional</label>
-          </p>
-          <p>
-          <p>Selecciona en que puesto/s te sientes mas comoda</p>
+      <fieldset class="formulario__fieldset">
+        <legend class="formulario__legend">Tus datos</legend>
+        <p class="formulario__group">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" maxlength="50" placeholder="Ingresa tu nombre" autofocus>
+        </p>
+        <p class="formulario__group">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" maxlength="50" placeholder="Ingresa tu apellido">
+        </p>
+        <p class="formulario__group">
+          <label for="nacimiento">Fecha de Nacimiento</label>
+          <input type="date" name="nacimiento" id="nacimiento">
+        </p>
+        <p class="formulario__group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" name="telefono" id="telefono" maxlength="11" placeholder="000 0000000">
+        </p>
+      </fieldset>
+
+      <fieldset class="formulario__fieldset">
+        <legend class="formulario__legend">Tu voley</legend>
+        <p class="formulario__question">¿Cuánta experiencia tenés en el deporte?</p>
+
+        <p class="formulario__group">
+          <input type="radio" name="experiencia" id="principiante">
+          <label for="principiante">Soy principiante</label>
+        </p>
+        <p class="formulario__group">
+          <input type="radio" name="experiencia" id="media">
+          <label for="media">He jugado unos años al voley</label>
+        </p>
+        <p class="formulario__group">
+          <input type="radio" name="experiencia" id="avanzado">
+          <label for="avanzado">He jugado muchos años al voley</label>
+        </p>
+        <p class="formulario__group">
+          <input type="radio" name="experiencia" id="profesional">
+          <label for="profesional">Soy o fui jugadora profesional</label>
+        </p>
+
+        <p class="formulario__question">Seleccioná en qué puesto/s te sentís más cómoda</p>
+        <p class="formulario__group">
           <select name="puesto" id="puesto" multiple size="6">
             <option value="">-</option>
             <option value="p">Punta</option>
             <option value="C">Central</option>
             <option value="A">Armadora</option>
             <option value="O">Opuesto</option>
-            <option value="L">Libero</option>
+            <option value="L">Líbero</option>
           </select>
-          </p>
-        </fieldset>
+        </p>
+      </fieldset>
 
-        <fieldset>
-          <legend>Mensaje</legend>
-          <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
-        </fieldset>
+      <fieldset class="formulario__fieldset">
+        <legend class="formulario__legend">Mensaje</legend>
+        <textarea class="formulario__textarea" name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Dejá aquí tu mensaje"></textarea>
+      </fieldset>
 
-        <p>¡En breve te contactaremos!</p>
-        <button>Enviar</button>
-      </form>
-    </section>
-  </main>
+      <p class="formulario__thanks">¡En breve te contactaremos!</p>
+      <button class="formulario__button">Enviar</button>
+    </form>
+  </section>
+</main>
+
 
   <footer>
     <div class="footer">

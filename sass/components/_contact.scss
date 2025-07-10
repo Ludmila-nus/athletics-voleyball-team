@@ -1,23 +1,37 @@
 .contactSection {
-    
-background-image: url('/athletics-voleyball-team/img/background/image1.jpeg');
+
+    background-image: url(../../img/background/voleyball-woman.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: 50% 50%;
+    height: 100vw;
+    background-size: cover;
+    text-align: center;
 
     * {
         padding-bottom: 20px;
     }
+
     h1 {
         font-family: $tittle-font;
         font-size: 1.3rem;
-        padding-bottom: 20px;                        
+        padding-bottom: 20px;
+        padding-top: 20px;
+
+        @include breakpoint(tablet) {
+            font-size: 1.5rem;
+            padding-top: 60px;
+        }
     }
-    address{
+
+    address {
         font-weight: 600;
     }
 
-    p{
+    p {
         font-family: $secondary-font;
 
-        a{
+        a {
             color: $color-pink;
             font-weight: 600;
             border-radius: 10px;
@@ -31,6 +45,6 @@ background-image: url('/athletics-voleyball-team/img/background/image1.jpeg');
         a:hover {
             background-color: $color-pink;
             color: $color-white;
-          }
+        }
     }
 }

@@ -4,42 +4,76 @@
         text-align: center;
         padding-top: 30px;
         padding-bottom: 20px;
+
+        @include breakpoint(tablet) {
+            font-size: 1.2rem;
+            padding-top: 60px;
+        }
     }
+
     background-image: url(../../img/background/red-voleibol.avif);
+    width: 100vw;
     padding-bottom: 90px;
+    background-size: cover
 
 }
 
 .playersTable {
-    background-color:$color-lightGrey2;
+    background-color: $color-lightGrey2;
     filter: opacity(90%);
     color: $color-grey;
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 auto;
     border-collapse: collapse;
-    
-    caption{
-        color:$color-black;
+
+    @include breakpoint(tablet) {
+        padding: 20px;
+        width: 60vw;        
+        margin: 0 auto;
+        
+    }
+
+    caption {
+        color: $color-black;
         font-size: 1.2rem;
         font-weight: 600;
         text-decoration: underline auto solid $color-black;
         line-height: 40px;
-        text-underline-offset: 5px;   
+        text-underline-offset: 5px;
     }
 
     tr {
         border-bottom: 1px solid $color-white;
     }
-    
+    th{
+        font-weight: 600;
+        text-align: center;
+        padding: 10px;
+        color: $color-black;
+        font-size: 1.1rem;
+
+        @include breakpoint(tablet) {
+            font-size: 1.2rem;
+            padding: 20px;
+        }
+    }
+    td {
+        text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+        color: $color-black;
+
+        @include breakpoint(tablet) {
+            font-size: 1.1rem;
+            padding: 20px;
+        }
+    };
+
+
     .tfoot {
         display: table-footer-group;
         background-color: #cf05cf;
-       
+
     }
 
 }
-
-
-
-

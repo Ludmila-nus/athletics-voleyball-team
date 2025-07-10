@@ -39,19 +39,15 @@
 <body>
   <header class="header-principal">
     <div class="container">
-      <div class="header-principal__logo">      
-        <button class="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
-
+      <div class="header-principal__logo">
+        <button id="toggleMenu">&#9776;<img src="./img/icons/playBall2.png" alt="ball"></button>
         <a href="index.html" class="header-principal__logo-link" id="title">athletics voley</a>
-
         <div class="header-principal__login">
           <button id="loginButton">Iniciar sesión</button>
-
           <div id="loginModal" class="modal">
             <div class="modal-content">
               <span class="close">&times;</span>
               <h2>Iniciar sesión</h2>
-
               <form id="loginForm">
                 <label for="username">Nombre de usuario:</label>
                 <input type="text" id="username" name="username">
@@ -62,20 +58,18 @@
             </div>
           </div>
         </div>
-
       </div>
-
       <div class="header-principal__nav-wrapper">
-        <nav class="header-principal__nav" >
+        <nav class="header-principal__nav">
           <ul class="header-principal__menu" id="menu">
-            <li>Home</li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="players.html">Nuestras jugadoras</a></li>
             <li><a href="news.html">Noticias</a></li>
             <li><a href="photoGalery.html">Galería de fotos</a></li>
-            <li><a href="traning.html">Horarios de entrenamientos</a></li>
-            <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
+            <li><a href="training.html">Horarios de entrenamientos</a></li>
+              <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
             <li><a href="messages.html">Dejanos tu mensaje</a></li>
-            <li><a href="links.html">Enlases de interes</a></li>
+            <li>Enlases de interes</li>
             <li><a href="contact.html">Contacto</a></li>
           </ul>
         </nav>
@@ -85,24 +79,74 @@
   </header>
 
   <main>
-    <nav>
-      <h2>Paginas de interés</h2>
-      <ul>
-        <li><a href="http://feva.org.ar/" target="voleyarg">Federacion de voley Argentino</a></li>
-        <li><a href="https://www.fcvoley.org.ar/" target="voleyarg">Federacion Cordobesa de Voley</a></li>
-        <iframe src="" width="1024" height="768" name="voleyarg" frameborder="0"></iframe>
-      </ul>
-    </nav>
 
+    <div class="links">
+
+        <nav>
+          <div class="links__tittle">
+            <h1>Enlaces de interés</h1>
+            <p>En esta sección encontrarás enlaces a páginas de interés relacionadas con el voley, como federaciones,
+              clubes y recursos útiles.</p>
+          </div>
+          <div class="links__items">
+            <h2>Paginas de interés</h2>
+            <ul>
+              <li><a href="https://www.fivb.com/" target="_blank">Federación Internacional de Voleibol (FIVB)</a></li>
+              <li><a href="https://www.cev.eu/" target="_blank">Confederación Europea de Voleibol (CEV)</a></li>
+              <li><a href="https://www.norceca.net/" target="_blank">Confederación de Voleibol del Norte, Centroamérica
+                  y
+                  el Caribe (NORCECA)</a></li>
+              <li><a href="https://www.southamericavolei.org/" target="_blank">Confederación Sudamericana de Voleibol
+                  (CSV)</a></li>
+              <ul>
+                <li><a href="http://feva.org.ar/" target="voleyarg">Federacion de voley Argentino</a></li>
+                <li><a href="https://www.fcvoley.org.ar/" target="voleyarg">Federacion Cordobesa de Voley</a></li>
+                <iframe src="" width="1024" height="768" name="voleyarg" frameborder="0"></iframe>
+              </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <hr>
-    <nav>
-      <p><a href="contacto.html">Contacto</a></p>
-    </nav>
+    <div class="footer">
+      <div class="footer__follow">
+        <h3>seguinos en</h3>
+        <a href="https://www.instagram.com/athletics_voley"><img src="./img/icons/instagram.png" alt="instagram"
+            class="instagram"></a>
+      </div>
+
+      <div class="footer__contactTo">
+        <div class="footer__contact">
+          <a href="contacto.html">Contacto</a>
+        </div>
+
+        <div class="footer__icons">
+          <ul>
+            <li><a href=""><img src="./img/icons/callPhone.png" alt="call phone"></a></li>
+            <li><a href=""><img src="./img/icons/whatsapp.png" alt="whatsapp"></a></li>
+            <li><a href=""><img src="./img/icons/email.png" alt="email"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flaticon-credit">
+      Iconos diseñados por <a href="https://www.flaticon.es/autores/ekros" title="Ekros"> Ekros </a> from <a
+        href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a>
+
+      <a target="_blank" href="https://icons8.com/icon/Y09FGAuM5XFB/send">Enviar</a> icono de <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+
+      <a target="_blank" href="https://icons8.com/icon/48839/instagram">Instagram</a> icono de <a target="_blank"
+        href="https://icons8.com">Icons8</a>
+    </div>
+
   </footer>
 
+  <script type="module" src="/main.js"></script>
 </body>
 
 </html>

@@ -61,13 +61,13 @@
     <div class="header-principal__nav-wrapper">
       <nav class="header-principal__nav">
         <ul class="header-principal__menu" id="menu">
-          <li>Home</li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="players.html">Nuestras jugadoras</a></li>
           <li><a href="news.html">Noticias</a></li>
           <li><a href="photoGalery.html">Galería de fotos</a></li>
-          <li><a href="traning.html">Horarios de entrenamientos</a></li>
+          <li><a href="training.html">Horarios de entrenamientos</a></li>
           <li><a href="joinUs.html">Sumate a nuestro equipo</a></li>
-          <li><a href="messages.html">Dejanos tu mensaje</a></li>
+          <li>Dejanos tu mensaje</li>
           <li><a href="links.html">Enlases de interes</a></li>
           <li><a href="contact.html">Contacto</a></li>
         </ul>
@@ -77,23 +77,39 @@
   </div>
 </header>
 
-  <main>
-    <section>
-      <h1>¡Nos encanta que nos dejes un mensaje!</h1>
-      <p>Tu opinión y tus palabras son muy importantes para nosotras. Queremos saber lo que piensas, tus historias, tus
-        reflexiones. Este espacio está reservado para ti, para que nos compartas lo que quieras decirnos.</p>
-      <p>Déjanos tu mensaje aquí y llena nuestro corazón de alegría al saber que estás con nosotras. Cada palabra que
-        nos
-        envíes será valorada y apreciada.</p>
-      <p>Gracias por ser parte de nuestra historia y por tomar un momento para dejarnos tu mensaje. ¡Esperamos ansiosas
-        por leerlo y disfrutar de tus palabras!</p>
+ <main class="message">
+  <section class="message__section">
+    <h1 class="message__title">¡Nos encanta que nos dejes un mensaje!</h1>
 
-      <form action="mensajevisitas" name="mensajevisitas" method="get">
-        <textarea name="mensaje" id="mensaje" cols="80" rows="10" placeholder="Deja aqui tu mensaje"></textarea>
-        <button>Enviar</button>
-      </form>
-    </section>
-  </main>
+    <p class="message__text">
+      Tu opinión y tus palabras son muy importantes para nosotras. Queremos saber lo que piensas, tus historias, tus
+      reflexiones. Este espacio está reservado para ti, para que nos compartas lo que quieras decirnos.
+    </p>
+
+    <p class="message__text">
+      Déjanos tu mensaje aquí y llena nuestro corazón de alegría al saber que estás con nosotras. Cada palabra que nos
+      envíes será valorada y apreciada.
+    </p>
+
+    <p class="message__text">
+      Gracias por ser parte de nuestra historia y por tomar un momento para dejarnos tu mensaje. ¡Esperamos ansiosas
+      por leerlo y disfrutar de tus palabras!
+    </p>
+
+    <form class="message__form" action="mensajevisitas" name="mensajevisitas" method="get">
+      <textarea
+        class="message__textarea"
+        name="mensaje"
+        id="mensaje"
+        cols="80"
+        rows="10"
+        placeholder="Deja aquí tu mensaje">
+      </textarea>
+
+      <button class="message__button">Enviar</button>
+    </form>
+  </section>
+  
 
   <footer>
     <div class="footer">

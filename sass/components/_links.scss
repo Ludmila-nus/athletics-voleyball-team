@@ -1,0 +1,83 @@
+.links {
+    background-image: url(../../img/background/voleyball-woman.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-position: 50% 50%;
+    height: 100vw;
+    background-size: cover;
+
+    &__tittle {
+        h1 {
+            font-size: 1.1rem;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+
+            @include breakpoint(tablet) {
+                font-size: 1.2rem;
+                padding-top: 60px;
+            }
+        }
+
+        p {
+            font-size: 0.8rem;
+            text-align: center;
+            padding-bottom: 20px;
+            color: $color-black;
+
+            @include breakpoint(tablet) {
+                font-size: 1rem;
+                padding-bottom: 30px;
+            }
+
+        }
+
+
+    }
+
+    &__items {
+        background-color: $color-lightGrey2;
+        filter: opacity(90%);
+        color: $color-grey;
+        width: 50vw;
+        margin: 0 auto;
+        height: 50vh;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+
+        @include breakpoint(tablet) {
+            width: 60vw;
+            height: 60vh;
+        }
+
+
+
+        li {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            background-color: $color-grey;
+
+
+
+            a {
+                display: block;
+                text-decoration-line: none;
+                text-transform: capitalize;
+                font-size: .8rem;
+                color: $color-black;
+                padding: 10px;
+                margin: 5px;
+
+
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+
+    }
+
+
+}
